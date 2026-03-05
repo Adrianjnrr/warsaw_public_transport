@@ -68,7 +68,7 @@ def num_per_stops(stop_activity):
             countDistinct('stop_id').alias('total_physical_stops')
         ).orderBy(col('total_physical_stops').desc())
 
-    return num_per_stops    
+    return num_per_stops
 
 
 def stop_time_with_hour(stop_time):
